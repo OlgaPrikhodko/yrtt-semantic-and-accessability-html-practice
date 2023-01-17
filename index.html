@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Returner News</title>
+  </head>
+  <body>
+    <header>
+      <!-- 1 the newspaper name that links back to the homepage -->
+      <a href="#">Tech Returner News</a>
+      <!-- 2  Navbar on the page that I can easily navigate to different pages -->
+      <nav>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Opinion</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Jobs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 3 text box that offers me accessibility options so I can choose how I interact with the page -->
+    <form action="">
+      <legend>Preferences:</legend>
+      <fieldset>
+        <input
+          type="checkbox"
+          id="allow-fleshing-elements"
+          name="allow-fleshing-elements"
+          checked
+        />
+        <label for="allow-fleshing-elements"
+          >Allow flashing elements Untick this to disable flashing and moving
+          elements</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Contrast ratio ("color contrast"):</legend>
+        <div>
+          <input
+            type="radio"
+            id="default-contrast"
+            value="default-contrast"
+            name="contrast"
+            checked
+          />
+          <label for="default-contrast">Default contrast ratio</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="high-contrast"
+            name="contrast"
+            value="high-contrast"
+          />
+          <label for="high-contrast"
+            >High contrast (dark text on light background)</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="low-luminance"
+            name="contrast"
+            value="low-luminance"
+          />
+          <label for="low-luminance"
+            >Low luminance (dark text on medium brown background)</label
+          >
+        </div>
+      </fieldset>
+    </form>
+
+    <main>
+      <article>
+        <!-- 4  name of the article so I can easily understand what the page is about -->
+        <h1>Accessibility Features: Easy Wins</h1>
+
+        <!-- sub-header with more information about the article -->
+        <h2>Handy tips on how to create accessible websites for everyone</h2>
+
+        <!-- 7 an image that adds colour and interest to the page:  -->
+        <img
+          src="./accessibility.png"
+          alt="This is a keyboard with a big blue button 'Accessibility' on it"
+        />
+
+        <!-- 8 navigate to different sections on the page and easily know what  which section is about -->
+        <aside>
+          <nav role="navigation">
+            <ul>
+              <li><a href="#section-introduction">Introduction</a></li>
+              <li><a href="#section-accesebility">Accessibility Checks</a></li>
+              <li><a href="#section-conclusion">Conclusion</a></li>
+              <li><a href="#section-more-stories">More stories</a></li>
+              <li><a href="#section-conclusion">Conclusion</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <section id="section-introduction">
+          <h3>Introduction</h3>
+          <p>
+            Tim Berners Lee dreamt of a World Wide Web that would be free and
+            accessible to everyone. Sadly, the modern web is littered with
+            poorly designed websites and difficult to navigate code (for both
+            developers and users). This often comes down to a lack of
+            understanding around different user needs.
+          </p>
+          <p>
+            Designing pages that are accessible for everyone shouldn't be too
+            difficult. The developers at Tech Returners News have collated an
+            'easy wins' checklist for Web page accessibility.
+          </p>
+          <p>
+            Keep this guide handy… When creating your own websites you can check
+            these criteria off the list!
+          </p>
+
+          <!-- 10 links to other news articles thematically relating to the article I am currently on-->
+          <p>
+            What would a truly accessible city look like? Read more about<a
+              href="#"
+              >accessible city...</a
+            >
+          </p>
+        </section>
+
+        <!--11  see another sub-heading that I can easily navigate to that indicates what the next section of text is about-->
+        <section id="section-accesebility">
+          <h3>Accessibility Checks:</h3>
+          <p>
+            Heading elements & Page Titles: HTML heading elements have been used
+            to represent page structure, supporting assistive technologies that
+            allow page navigation from heading to heading.
+          </p>
+          <p>
+            Re-size Text: You can vary text size by using your browser's text
+            resize settings (through Options or Preferences), text-only zoom,
+            page zoom (which also zooms images, buttons etc) without incurring
+            styling issues / text over-lapping or being cut off the page.
+          </p>
+
+          <p>
+            Alternative text for images: All images have been given appropriate
+            alternative text.
+          </p>
+          <p>
+            Link text: All hyperlinks should make sense when read out of
+            context, and hyperlinks are clearly presented in a different text
+            style from normal body text. If a link opens in a new browser page,
+            it has been labelled as doing so. JavaScript independence: Where
+            JavaScript or other scripts are used for navigation or
+            functionality, an alternative mechanism has been put in place in
+            case your browser does not support these scripts.
+          </p>
+
+          <p>
+            Colour contrast: has been checked for text and background colour
+            combinations to ensure that the contrast is sufficient and I have
+            also ensured that information is not referenced by colour alone.
+          </p>
+
+          <p>
+            Style sheets: If style sheets are not supported or are turned off,
+            information on the site can still be accessed and read.
+          </p>
+          <p>
+            Forms: forms are marked up correctly so people can interact with
+            them using only the keyboard, voice input or screen readers. The
+            form labels themselves are clickable, increasing the target area and
+            making it easier to select small radio buttons of checkboxes.
+          </p>
+
+          <!-- 13 see a link with more information so I can read more about the subject matter if interested-->
+          <p>
+            For more information on :
+            <a href="https://www.w3.org/WAI/test-evaluate/preliminary/"
+              >Web Accessibility view</a
+            >
+          </p>
+        </section>
+
+        <section id="section-conclusion">
+          <!-- 14  another sub-heading that I can easily navigate to that -->
+          <h3>Conclusion</h3>
+          <!-- 15 see text relating to the above header -->
+          <p>
+            By spending just a little more time on getting the building blocks
+            of the web right, developers can help create an Internet that works
+            for ever yone.
+          </p>
+        </section>
+
+        <section id="section-more-stories">
+          <!-- nother sub-heading that I can easily navigate to that indicates what the next section of text is about More stories-->
+          <h3>More stories</h3>
+
+          <!-- 17 see a list of links to more articles I could read -->
+          <ul>
+            <li><a href="#">Tokyo Olympics: gold for Great Britain!</a></li>
+            <li><a href="#">A day in the life of</a></li>
+            <li>
+              <a href="#"
+                >Call for action as UK driver shortage hits supermarkets</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >The six worst school sports memories of your childhood</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Clairvoyants evening cancelled from unforeseen circumstances</a
+              >
+            </li>
+            <li><a href="#">Safety meeting ends in accident </a></li>
+            <li>
+              <a href="#"
+                >Russian traffic officer with golden toilet is arrested after
+                police uncover massive bribery scheme</a
+              >
+            </li>
+            <li>
+              <a href="#">Jellyfish apocalypse is coming claim scientists</a>
+            </li>
+          </ul>
+        </section>
+        <!-- 6 author information -->
+        <footer>
+          <p>
+            Posted on <time datetime="2015-05-16 19:00">04.08.21</time>
+            by Jim Eggs
+          </p>
+          <address>
+            You could email him by
+            <a href="mailto:jimmy.eggs@hotmail.com">jimmy.eggs@hotmail.com</a>
+          </address>
+        </footer>
+      </article>
+    </main>
+    <footer>
+      <!-- 17 to see a footer with more links and a company logo -->
+      <img src="./TRLogo.png" alt="Tech Returnners logo" />
+      <ul>
+        <li><a href="#"> News </a></li>
+        <li><a href="#">Opinion </a></li>
+        <li><a href="#"> Sport </a></li>
+        <li><a href="#">Culture </a></li>
+        <li><a href="#"> Tech </a></li>
+      </ul>
+      <p>© 2021 Tech Returners</p>
+    </footer>
+  </body>
+</html>
